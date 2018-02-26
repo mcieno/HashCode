@@ -1,4 +1,4 @@
-![Imgur](https://i.imgur.com/x0BRVWC.png)
+![Google Hash Code 2018](https://i.imgur.com/KTDA2IL.png)
 # HashCode2018
 Google *Hash Code 2018* proposed solutions.
 
