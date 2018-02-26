@@ -1,6 +1,3 @@
-import sys
-
-
 def sizes(num):
     """Genera tutte le possibili coppie di numeri interi che formano un
     rettangolo di una certa area.
@@ -12,13 +9,15 @@ def sizes(num):
     num = 10
     yield (1, 10), (2, 5), (5, 2), (10, 1)
     """
+
     def factor(x):
         for d in range(1, x // 2 + 1):
             if x % d == 0:
                 yield d
         yield num
-    for i in factor(num):
-        yield (i, num // i)
+
+    for div in factor(num):
+        yield (div, num // div)
 
 
 def mask(mat, max_r, max_c, count, row, col, combs, ignore):
@@ -103,31 +102,31 @@ def grow(s, limit, max_r, max_c, ignore):
     """
     # Espandi, finche' possibile, la fetta verso l'alto
     while s['idx'][0] > 0 and \
-          (s['siz'][0] + 1) * s['siz'][1] <= limit and \
-          all(ignore[s['idx'][0] - 1][s['idx'][1] + k] is not True for k in range(s['siz'][1])):
+            (s['siz'][0] + 1) * s['siz'][1] <= limit and \
+            all(ignore[s['idx'][0] - 1][s['idx'][1] + k] is not True for k in range(s['siz'][1])):
         s['idx'] = (s['idx'][0] - 1, s['idx'][1])
         s['siz'] = (s['siz'][0] + 1, s['siz'][1])
     # Espandi, finche' possibile, la fetta verso sinistra
     while s['idx'][1] > 0 and \
-          s['siz'][0] * (s['siz'][1] + 1) <= limit and \
-          all(ignore[s['idx'][0] + k][s['idx'][1] - 1] is not True for k in range(s['siz'][0])):
+            s['siz'][0] * (s['siz'][1] + 1) <= limit and \
+            all(ignore[s['idx'][0] + k][s['idx'][1] - 1] is not True for k in range(s['siz'][0])):
         s['idx'] = (s['idx'][0], s['idx'][1] - 1)
         s['siz'] = (s['siz'][0], s['siz'][1] + 1)
     # Espandi, finche' possibile, la fetta verso il basso
     while s['idx'][0] + s['siz'][0] < max_r and \
-          (s['siz'][0] + 1) * s['siz'][1] <= limit and \
-          all(ignore[s['idx'][0] + s['siz'][0]][s['idx'][1] + k] is not True for k in range(s['siz'][1])):
+            (s['siz'][0] + 1) * s['siz'][1] <= limit and \
+            all(ignore[s['idx'][0] + s['siz'][0]][s['idx'][1] + k] is not True for k in range(s['siz'][1])):
         s['siz'] = (s['siz'][0] + 1, s['siz'][1])
     # Espandi, finche' possibile, la fetta verso destra
     while s['idx'][1] + s['siz'][1] < max_c and \
-          s['siz'][0] * (s['siz'][1] + 1) <= limit and \
-          all(ignore[s['idx'][0] + k][s['idx'][1] + s['siz'][1]] is not True for k in range(s['siz'][0])):
+            s['siz'][0] * (s['siz'][1] + 1) <= limit and \
+            all(ignore[s['idx'][0] + k][s['idx'][1] + s['siz'][1]] is not True for k in range(s['siz'][0])):
         s['siz'] = (s['siz'][0], s['siz'][1] + 1)
 
     # Aggiorna le coordinate da ignorare
-    for i in range(s['siz'][0]):
-        for j in range(s['siz'][1]):
-            ignore[s['idx'][0] + i][s['idx'][1] + j] = True
+    for r in range(s['siz'][0]):
+        for c in range(s['siz'][1]):
+            ignore[s['idx'][0] + r][s['idx'][1] + c] = True
 
     return s
 
@@ -159,16 +158,19 @@ if __name__ == '__main__':
       imposta, sia a non sovrapporsi alle fette gia' esistenti (vedi metodo
       <grow>).
     """
-    # Per avere piu' informazioni in output
-    DEBUG = False
+    import sys
 
     # Il nome del file viene letto come argomento da riga di comando
     if len(sys.argv) < 2:
         sys.stderr.write('Filename missing\n')
         sys.exit()
 
+    # Leggi il file
     with open(sys.argv[1], 'r') as f:
         pizza = [x.strip() for x in f]
+
+    # Per avere piu' informazioni in output
+    DEBUG = False
 
     # DEBUG -- START
     if DEBUG is True:
