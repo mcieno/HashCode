@@ -1,7 +1,7 @@
 ![Google Hash Code 2018](https://i.imgur.com/KTDA2IL.png)
 # HashCode2018
-![](https://forthebadge.com/images/badges/made-with-python.svg)
-![](https://forthebadge.com/images/badges/certified-snoop-lion.svg)
+![](https://forthebadge.com/images/badges/made-with-python.svg) &nbsp;
+![](https://forthebadge.com/images/badges/certified-snoop-lion.svg) &nbsp;
 ![](https://forthebadge.com/images/badges/gluten-free.svg)
 
 Google *Hash Code 2018* proposed solutions.
