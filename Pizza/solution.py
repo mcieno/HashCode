@@ -128,8 +128,6 @@ def main():
     with open(sys.argv[1], 'r') as fi:
         pizza = [line.strip() for line in fi]
 
-    import time
-    start = time.clock()
     rows, cols, min_pieces, max_pieces = [int(x) for x in pizza.pop(0).split()]
 
     all_combs = [[x for x in sizes(piece)] for piece in range(2 * min_pieces, max_pieces + 1)]
@@ -151,8 +149,7 @@ def main():
 
     for i in range(len(slices)):
         slices[i] = grow(slices[i], max_pieces, rows, cols, already)
-    print(time.clock() - start)
-    return
+    
     print(len(slices))
     for s in slices:
         print(s['idx'][0], s['idx'][1], s['idx'][0] + s['siz'][0] - 1, s['idx'][1] + s['siz'][1] - 1)
