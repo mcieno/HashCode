@@ -21,7 +21,7 @@ Google *Hash Code 2018* proposed solutions (by team `Copy-Pasta`).
 ##### Theoretical maximum: 1.050.057
 
 
-## [Online Qualification Round - Self-driving rides](Self-driving rides/problem_statement.pdf)
+## [Online Qualification Round - Self-driving rides](Self-driving%20rides/problem_statement.pdf)
 
 |      DATA SET       |        SCORE        |
 | ------------------- | ------------------- |
