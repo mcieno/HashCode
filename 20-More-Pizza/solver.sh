@@ -1,4 +1,27 @@
 #!/usr/bin/env bash
+# The proposed problem can be viewed as a subset-sum optimization problem.
+# There are many subset-sum solvers out there. Also, one could easily write
+# an FPTAS for subset-sum in case an exact solution is taking too much time.
+# However, one could rewrite this as an ILP problem throw it to any linear
+# solver, e.g. lp_solve (http://lpsolve.sourceforge.net/5.5/).
+#
+# For example, given the instance:
+#
+# ```
+# 17 4
+# 2 5 6 8
+# ```
+#
+# the optimization problem is
+#
+# ```
+# Maximize 
+#   2*x0 + 5*x1 + 6*x2 + 8*x3
+# Subject to
+#   2*x0 + 5*x1 + 6*x2 + 8*x3 <= 17
+# Binaries
+#   x0  x1  x2  x3
+# ```
 
 echo '[*] Solving a.mps'
 lp_solve -mps a.mps | tee a.sol.tmp
