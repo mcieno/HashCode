@@ -13,7 +13,7 @@ Google *Hash Code* proposed solutions.
 ### [Practice Problem - Pizza](18-Pizza/problem_statement.pdf)
   
 |     DATA SET      |     SCORE     |
-| ----------------- | ------------- |
+| ----------------- | ------------: |
 | A - example       |            15 |
 | B - small         |            40 |
 | C - medium        |        48,888 |
@@ -26,7 +26,7 @@ Google *Hash Code* proposed solutions.
 ### [Online Qualification Round - Self-driving rides](18-Self-driving-rides/problem_statement.pdf)
 
 |      DATA SET       |        SCORE        |
-| ------------------- | ------------------- |
+| ------------------- | ------------------: |
 | A - example         |                  10 |
 | B - should be easy  |             176,877 |
 | C - no hurry        |          15,798,840 |
@@ -36,3 +36,20 @@ Google *Hash Code* proposed solutions.
 #### Total score: 49,088,609
 ##### Highest score during competition: 49,776,211
 ###### Our score during competition: 48,095,880 (362nd world – 17th Italy)
+
+------
+
+## HashCode2020
+
+### [Practice Problem - More Pizza](20-More-Pizza/problem_statement.pdf)
+  
+|    DATA SET     |      SCORE      |
+| --------------- | --------------: |
+| A - example     |              16 |
+| B - small       |             100 |
+| C - medium      |           4,500 |
+| D - quite_big   |   1,000,000,000 |
+| E - also_big    |     505,000,000 |
+
+#### Total score: 1,505,004,616
+##### Theoretical maximum: 1,505,004,616
