@@ -1,7 +1,6 @@
 ![Google Hash Code](https://i.imgur.com/KTDA2IL.png)
 # HashCode
-![](https://forthebadge.com/images/badges/made-with-python.svg) &nbsp;
-![](https://forthebadge.com/images/badges/certified-snoop-lion.svg) &nbsp;
+![](https://forthebadge.com/images/badges/powered-by-electricity.svg) &nbsp;
 ![](https://forthebadge.com/images/badges/gluten-free.svg)
 
 Google *Hash Code* proposed solutions.
