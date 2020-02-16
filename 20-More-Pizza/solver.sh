@@ -2,8 +2,8 @@
 # The proposed problem can be viewed as a subset-sum optimization problem.
 # There are many subset-sum solvers out there. Also, one could easily write
 # an FPTAS for subset-sum in case an exact solution is taking too much time.
-# However, one could rewrite this as an ILP problem throw it to any linear
-# solver, e.g. lp_solve (http://lpsolve.sourceforge.net/5.5/).
+# However, one could rewrite this as an ILP problem and throw it to any
+# linear solver, e.g. lp_solve (http://lpsolve.sourceforge.net/5.5/).
 #
 # For example, given the instance:
 #
