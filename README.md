@@ -1,9 +1,17 @@
 ![Google Hash Code](https://i.imgur.com/KTDA2IL.png)
+
 # HashCode
 ![](https://forthebadge.com/images/badges/powered-by-electricity.svg) &nbsp;
 ![](https://forthebadge.com/images/badges/gluten-free.svg)
 
 Google *Hash Code* proposed solutions.
+
+- [HashCode](#hashcode)
+  * [HashCode2018](#hashcode2018)
+    + Practice Problem - Pizza
+    + Online Qualification Round - Self-driving rides
+  * [HashCode2020](#hashcode2020)
+    + Practice Problem - More Pizza
 
 ------
 
@@ -47,8 +55,8 @@ Google *Hash Code* proposed solutions.
 | A - example     |              16 |
 | B - small       |             100 |
 | C - medium      |           4,500 |
-| D - quite_big   |   1,000,000,000 |
-| E - also_big    |     505,000,000 |
+| D - quite big   |   1,000,000,000 |
+| E - also big    |     505,000,000 |
 
 #### Total score: 1,505,004,616
 ##### Theoretical maximum: 1,505,004,616
