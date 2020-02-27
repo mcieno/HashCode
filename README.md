@@ -42,7 +42,7 @@ Google *Hash Code* proposed solutions.
 
 #### Total score: 49,088,609
 ##### Highest score during competition: 49,776,211
-###### Our score during competition: 48,095,880 (362nd world – 17th Italy)
+###### Our score during competition: 48,095,880 (362nd World – 17th Italy)
 
 ------
 
@@ -60,3 +60,19 @@ Google *Hash Code* proposed solutions.
 
 #### Total score: 1,505,004,616
 ##### Theoretical maximum: 1,505,004,616
+
+
+### [Online Qualification Round - Book Scanning](20-Book-Scanning/problem_statement.pdf)
+
+|          DATA SET           |        SCORE        |
+| --------------------------- | ------------------: |
+| A - example                 |                  21 |
+| B - read on                 |           5,822,900 |
+| C - incunabula              |           5,689,598 |
+| D - tough choices           |           5,031,845 |
+| E - so many books           |           5,099,748 |
+| F - libraries of the world  |           5,345,656 |
+
+#### Total score: 26,989,768
+##### Highest score during competition: 27,203,691
+###### Our score during competition: 26,096,148 (1299th World – 58th Italy)
