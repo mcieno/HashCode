@@ -187,10 +187,6 @@ def input_selection(fname):
 #   - NRAND: How many times try to find a better solution via randomization
 #   - DEPTH: How many swaps to do for each randomization try
 
-update_alpha = True
-update_beta = STDRATE != .0
-update_gamma = STDDELAY != .0
-
 # Parameters found with little elbow grease and a prayer
 if '/a_' in infile:
     AA, AAX = 1, 1
