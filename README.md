@@ -12,13 +12,14 @@ Google *Hash Code* proposed solutions.
     + Online Qualification Round - Self-driving rides
   * [HashCode2020](#hashcode2020)
     + Practice Problem - More Pizza
+    + Online Qualification Round - Book Scanning
 
 ------
 
 ## HashCode2018
 
 ### [Practice Problem - Pizza](18-Pizza/problem_statement.pdf)
-  
+
 |     DATA SET      |     SCORE     |
 | ----------------- | ------------: |
 | A - example       |            15 |
@@ -49,7 +50,7 @@ Google *Hash Code* proposed solutions.
 ## HashCode2020
 
 ### [Practice Problem - More Pizza](20-More-Pizza/problem_statement.pdf)
-  
+
 |    DATA SET     |      SCORE      |
 | --------------- | --------------: |
 | A - example     |              16 |
