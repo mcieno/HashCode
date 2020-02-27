@@ -18,12 +18,13 @@ def log(*args, x='*'):
 
 
 if len(sys.argv) < 2:
-    log(f'Usage: ./{sys.argv[0]} INPUT_FILE [OUTPUT_FILE] [PRESOL_FILE]', '-')
+    log(f'Usage: ./{sys.argv[0]} INPUT_FILE [0|A|B|C|D|E|F] [OUTPUT_FILE] [PRESOL_FILE]', '-')
     sys.exit(0)
 
 infile = sys.argv[1].strip()
-outfile = sys.argv[2].strip() if len(sys.argv) > 2 else infile + '.out'
-presolfile = sys.argv[3].strip() if len(sys.argv) > 3 else None
+choice = sys.argv[2].strip() if len(sys.argv) > 2 else None
+outfile = sys.argv[3].strip() if len(sys.argv) > 3 else infile + '.out'
+presolfile = sys.argv[4].strip() if len(sys.argv) > 4 else None
 
 log('Parsing input')
 # B             = Number of books
@@ -188,7 +189,7 @@ def input_selection(fname):
 #   - DEPTH: How many swaps to do for each randomization try
 
 # Parameters found with little elbow grease and a prayer
-if '/a_' in infile:
+if choice == 'A':
     AA, AAX = 1, 1
     BB, BBX = 1, 1
     CC, CCX = 1, 1
@@ -198,7 +199,7 @@ if '/a_' in infile:
     RR = 0
     NRAND, DEPTH = 0, 0
 
-elif '/b_' in infile:
+elif choice == 'B':
     AA, AAX = 1, 1
     BB, BBX = 1, 1
     CC, CCX = 1, 1
@@ -208,7 +209,7 @@ elif '/b_' in infile:
     RR = 0
     NRAND, DEPTH = 0, 0
 
-elif 'c_' in infile:
+elif choice == 'C':
     AA, AAX = 2.02, 0
     BB, BBX = .01, 0
     CC, CCX = 2.17, 0
@@ -218,7 +219,7 @@ elif 'c_' in infile:
     RR = 3
     NRAND, DEPTH = 50, 6
 
-elif '/d_' in infile:
+elif choice == 'D':
     AA, AAX = 2, 0
     BB, BBX = 0, 0
     CC, CCX = 20, 0
@@ -228,7 +229,7 @@ elif '/d_' in infile:
     RR = 3
     NRAND, DEPTH = 50, 5
 
-elif '/e_' in infile:
+elif choice == 'E':
     AA, AAX = 1.5, 0
     BB, BBX = .1, .1
     CC, CCX = 1.75, 0
@@ -238,7 +239,7 @@ elif '/e_' in infile:
     RR = 0
     NRAND, DEPTH = 500, 15
 
-elif '/f_' in infile:
+elif choice == 'F':
     AA, AAX = 1.5, 0
     BB, BBX = .1, 0
     CC, CCX = 1.79, 0
