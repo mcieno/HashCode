@@ -1,0 +1,102 @@
+Maximize
+
+ obj: [ ipeppert0 * ipeppert0 + ibasilt0 * ibasilt0 + ioniont0 * ioniont0 + imushroomt0 * imushroomt0 + itomatot0 * itomatot0 + iolivet0 * iolivet0 + ichickent0 * ichickent0 + ipeppert0 * ibasilt0 + ipeppert0 * ioniont0 + ipeppert0 * imushroomt0 + ipeppert0 * itomatot0 + ipeppert0 * iolivet0 + ipeppert0 * ichickent0 + ibasilt0 * ioniont0 + ibasilt0 * imushroomt0 + ibasilt0 * itomatot0 + ibasilt0 * iolivet0 + ibasilt0 * ichickent0 + ioniont0 * imushroomt0 + ioniont0 * itomatot0 + ioniont0 * iolivet0 + ioniont0 * ichickent0 + imushroomt0 * itomatot0 + imushroomt0 * iolivet0 + imushroomt0 * ichickent0 + itomatot0 * iolivet0 + itomatot0 * ichickent0 + iolivet0 * ichickent0 + ipeppert1 * ipeppert1 + ibasilt1 * ibasilt1 + ioniont1 * ioniont1 + imushroomt1 * imushroomt1 + itomatot1 * itomatot1 + iolivet1 * iolivet1 + ichickent1 * ichickent1 + ipeppert1 * ibasilt1 + ipeppert1 * ioniont1 + ipeppert1 * imushroomt1 + ipeppert1 * itomatot1 + ipeppert1 * iolivet1 + ipeppert1 * ichickent1 + ibasilt1 * ioniont1 + ibasilt1 * imushroomt1 + ibasilt1 * itomatot1 + ibasilt1 * iolivet1 + ibasilt1 * ichickent1 + ioniont1 * imushroomt1 + ioniont1 * itomatot1 + ioniont1 * iolivet1 + ioniont1 * ichickent1 + imushroomt1 * itomatot1 + imushroomt1 * iolivet1 + imushroomt1 * ichickent1 + itomatot1 * iolivet1 + itomatot1 * ichickent1 + iolivet1 * ichickent1 + ipeppert2 * ipeppert2 + ibasilt2 * ibasilt2 + ioniont2 * ioniont2 + imushroomt2 * imushroomt2 + itomatot2 * itomatot2 + iolivet2 * iolivet2 + ichickent2 * ichickent2 + ipeppert2 * ibasilt2 + ipeppert2 * ioniont2 + ipeppert2 * imushroomt2 + ipeppert2 * itomatot2 + ipeppert2 * iolivet2 + ipeppert2 * ichickent2 + ibasilt2 * ioniont2 + ibasilt2 * imushroomt2 + ibasilt2 * itomatot2 + ibasilt2 * iolivet2 + ibasilt2 * ichickent2 + ioniont2 * imushroomt2 + ioniont2 * itomatot2 + ioniont2 * iolivet2 + ioniont2 * ichickent2 + imushroomt2 * itomatot2 + imushroomt2 * iolivet2 + imushroomt2 * ichickent2 + itomatot2 * iolivet2 + itomatot2 * ichickent2 + iolivet2 * ichickent2 + ipeppert3 * ipeppert3 + ibasilt3 * ibasilt3 + ioniont3 * ioniont3 + imushroomt3 * imushroomt3 + itomatot3 * itomatot3 + iolivet3 * iolivet3 + ichickent3 * ichickent3 + ipeppert3 * ibasilt3 + ipeppert3 * ioniont3 + ipeppert3 * imushroomt3 + ipeppert3 * itomatot3 + ipeppert3 * iolivet3 + ipeppert3 * ichickent3 + ibasilt3 * ioniont3 + ibasilt3 * imushroomt3 + ibasilt3 * itomatot3 + ibasilt3 * iolivet3 + ibasilt3 * ichickent3 + ioniont3 * imushroomt3 + ioniont3 * itomatot3 + ioniont3 * iolivet3 + ioniont3 * ichickent3 + imushroomt3 * itomatot3 + imushroomt3 * iolivet3 + imushroomt3 * ichickent3 + itomatot3 * iolivet3 + itomatot3 * ichickent3 + iolivet3 * ichickent3 ] / 2
+
+
+Subject To
+
+ p0t0 + p0t1 + p0t2 + p0t3  <= 1
+ p1t0 + p1t1 + p1t2 + p1t3  <= 1
+ p2t0 + p2t1 + p2t2 + p2t3  <= 1
+ p3t0 + p3t1 + p3t2 + p3t3  <= 1
+ p4t0 + p4t1 + p4t2 + p4t3  <= 1
+ p0t0 + p1t0 + p2t0 + p3t0 + p4t0 - 2 t0g2 = 0
+ p0t1 + p1t1 + p2t1 + p3t1 + p4t1 - 3 t1g3 = 0
+ p0t2 + p1t2 + p2t2 + p3t2 + p4t2 - 3 t2g3 = 0
+ p0t3 + p1t3 + p2t3 + p3t3 + p4t3 - 4 t3g4 = 0
+ ipeppert0 - p0t0 - p2t0 <= 0
+ ipeppert1 - p0t1 - p2t1 <= 0
+ ipeppert2 - p0t2 - p2t2 <= 0
+ ipeppert3 - p0t3 - p2t3 <= 0
+ ibasilt0 - p1t0 - p3t0 - p4t0 <= 0
+ ibasilt1 - p1t1 - p3t1 - p4t1 <= 0
+ ibasilt2 - p1t2 - p3t2 - p4t2 <= 0
+ ibasilt3 - p1t3 - p3t3 - p4t3 <= 0
+ ioniont0 - p0t0 <= 0
+ ioniont1 - p0t1 <= 0
+ ioniont2 - p0t2 <= 0
+ ioniont3 - p0t3 <= 0
+ imushroomt0 - p1t0 - p2t0 - p3t0 <= 0
+ imushroomt1 - p1t1 - p2t1 - p3t1 <= 0
+ imushroomt2 - p1t2 - p2t2 - p3t2 <= 0
+ imushroomt3 - p1t3 - p2t3 - p3t3 <= 0
+ itomatot0 - p1t0 - p3t0 <= 0
+ itomatot1 - p1t1 - p3t1 <= 0
+ itomatot2 - p1t2 - p3t2 <= 0
+ itomatot3 - p1t3 - p3t3 <= 0
+ iolivet0 - p0t0 <= 0
+ iolivet1 - p0t1 <= 0
+ iolivet2 - p0t2 <= 0
+ iolivet3 - p0t3 <= 0
+ ichickent0 - p2t0 - p4t0 <= 0
+ ichickent1 - p2t1 - p4t1 <= 0
+ ichickent2 - p2t2 - p4t2 <= 0
+ ichickent3 - p2t3 - p4t3 <= 0
+
+Binaries
+
+ ipeppert0
+ ipeppert1
+ ipeppert2
+ ipeppert3
+ ibasilt0
+ ibasilt1
+ ibasilt2
+ ibasilt3
+ ioniont0
+ ioniont1
+ ioniont2
+ ioniont3
+ imushroomt0
+ imushroomt1
+ imushroomt2
+ imushroomt3
+ itomatot0
+ itomatot1
+ itomatot2
+ itomatot3
+ iolivet0
+ iolivet1
+ iolivet2
+ iolivet3
+ ichickent0
+ ichickent1
+ ichickent2
+ ichickent3
+ p0t0
+ p0t1
+ p0t2
+ p0t3
+ p1t0
+ p1t1
+ p1t2
+ p1t3
+ p2t0
+ p2t1
+ p2t2
+ p2t3
+ p3t0
+ p3t1
+ p3t2
+ p3t3
+ p4t0
+ p4t1
+ p4t2
+ p4t3
+ t0g2
+ t1g3
+ t2g3
+ t3g4
+
+
+End

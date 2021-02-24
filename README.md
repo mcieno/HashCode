@@ -13,6 +13,9 @@ Google *Hash Code* proposed solutions.
   * [HashCode2020](#hashcode2020)
     + Practice Problem - More Pizza
     + Online Qualification Round - Book Scanning
+  * [HashCode2021](#hashcode2021)
+    + Practice Problem - Even More Pizza
+    + Online Qualification Round - Traffic Signaling
 
 ------
 
@@ -77,3 +80,36 @@ Google *Hash Code* proposed solutions.
 #### Total score: 26,989,768
 ##### Highest score during competition: 27,203,691
 ###### Our score during competition: 26,096,148 (1299th World – 58th Italy)
+
+------
+
+## HashCode2021
+
+### [Practice Problem - Even More Pizza](21-Even-More-Pizza/problem_statement.pdf)
+
+|           DATA SET           |      SCORE      |
+| ---------------------------- | --------------: |
+| A - example                  |              74 |
+| B - little bit of everything |          13,400 |
+| C - many ingredients         |     708,507,421 |
+| D - many pizzas              |       7,807,608 |
+| E - many teams               |      10,361,446 |
+
+#### Total score: 726,689,949
+##### Theoretical maximum: Unknown
+
+
+### [Online Qualification Round - Traffic Signaling](21-Traffic-Signaling/problem_statement.pdf)
+
+|       DATA SET       |      SCORE      |
+| -------------------- | --------------: |
+| A – An example       |           2,002 |
+| B – By the ocean     |       4,567,008 |
+| C – Checkmate        |       1,302,949 |
+| D – Daily commute    |       1,595,437 |
+| E – Etoile           |         716,471 |
+| F – Forever jammed   |       1,168,881 |
+
+#### Total score: 9,352,748
+##### Highest score during competition: 10,586,135
+###### Our score during competition: 9,260,061 (1738th World – 85th Italy)
