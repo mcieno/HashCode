@@ -16,6 +16,8 @@ Google *Hash Code* proposed solutions.
   * [HashCode2021](#hashcode2021)
     + Practice Problem - Even More Pizza
     + Online Qualification Round - Traffic Signaling
+  * [HashCode2022](#hashcode2022)
+    + Practice Problem - One Pizza
 
 ------
 
@@ -113,3 +115,25 @@ Google *Hash Code* proposed solutions.
 #### Total score: 9,352,748
 ##### Highest score during competition: 10,586,135
 ###### Our score during competition: 9,260,061 (1738th World – 85th Italy)
+
+------
+
+## HashCode2022
+
+### [Practice Problem - One Pizza](22-One-Pizza/problem_statement.pdf)
+
+|    DATA SET    |  SCORE  |
+| -------------- | ------: |
+| A - An example |       2 |
+| B - Basic      |       5 |
+| C - Coarse     |       5 |
+| D - Difficult  |   1,805 |
+| E - Elaborate  |   2,051 |
+
+***Note:*** All problems have been solved to optimality except E, for which we
+know the optimal solution must be < 2,288. Hence, our gap is < 11.6%. If you
+wish to continue the optimization from where we left you can import `e.mst` into
+your solver and restart the optimization.
+
+#### Total score: 3,868
+##### Theoretical maximum: < 4,105
