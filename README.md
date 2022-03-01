@@ -18,6 +18,7 @@ Google *Hash Code* proposed solutions.
     + Online Qualification Round - Traffic Signaling
   * [HashCode2022](#hashcode2022)
     + Practice Problem - One Pizza
+    + Online Qualification Round - Mentorship and Teamwork
 
 ------
 
@@ -137,3 +138,17 @@ your solver and restart the optimization.
 
 #### Total score: 3,868
 ##### Theoretical maximum: < 4,105
+
+### [Online Qualification Round - Mentorship and Teamwork](22-Mentorship-and-Teamwork/problem_statement.pdf)
+
+|        DATA SET        |   SCORE   |
+| ---------------------- | --------: |
+| A - An example         |        33 |
+| B - Better start small |   901,204 |
+| C - Collaboration      |   243,149 |
+| D - Dense schedule     |   251,751 |
+| E - Exceptional skills | 1,603,617 |
+| F - Find great mentors |   593,358 |
+
+#### Total score: 3,593,112
+##### Highest score during competition: 4,220,236
